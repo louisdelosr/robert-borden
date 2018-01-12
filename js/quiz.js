@@ -381,7 +381,7 @@ function correct() {
 	} else if(total <= 4) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Oh no, looks like you need to study more! Visit the <a href="biography.html">Biography</a> page to help you answer the questions! Remember to also watch the interview <a href="index.html#interview">video</a> with the grand nephew of Sir Robert Borden.');
 	} if( total >= 7 && total >= 5) {
-		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Keep trying! Visit the <a href="biography.html">Biography</a> page to help you answer the questions!  Remember to also watch the interview <a href="index.html#interview">video</a> with the grand nephew of Sir Robert Borden.');
+		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Keep trying! Visit the <a href="biography.html">Biography</a> page to help you answer the questions!  Remember to also watch the interview <a href="index.html#title3">video</a> with the grand nephew of Sir Robert Borden.');
 	} if(total >= 10 && total >= 8) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%! ') + ('<br>Very good, you`re almost there!');
 	} if(total == 11) {
