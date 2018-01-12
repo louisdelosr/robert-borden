@@ -1,0 +1,743 @@
+/* Mobile first design 51rem and below is mobile size */
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 37.2rem;
+	font-family: 'Hind', sans-serif;
+
+}
+
+footer li {
+   list-style: none;
+}
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height: 37.2rem;
+   background-color: black;
+   text-align: center;
+   color: #9b3f3f;
+}
+
+footer a {
+	color: #f2f2f2;
+}
+
+footer a:hover {
+	color: #a89b9a;
+}
+
+#contact {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.links {
+	position: relative;
+	float: none;
+	padding-left: 0;
+}
+
+.links li {
+	margin: 10px 0;
+}
+
+.footer-description {
+	position: relative;
+	top: 10px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+#title, #title2, #title3, #title4 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 1.2em;
+}
+
+#content {
+	font-family: 'Faustina', serif;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.hamburger-menu {
+	position: absolute;
+	right: 12px;
+	top: 17px;
+}
+
+.hamburger-menu div:hover {
+	background-color: white;
+}
+
+.hamburger-menu:hover div {
+	background-color: white;
+}
+
+.horizontal-menu li:not(#current) {
+	display: none;
+	color: black;
+}
+
+.horizontal-menu.responsive {
+	position: relative;
+}
+.horizontal-menu.responsive li.hamburger-menu {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.horizontal-menu.responsive li {
+	float: none;
+	display: block;
+	text-align: left;
+}
+
+.horizontal-menu li.hamburger-menu {
+	float: right;
+	display: block;
+}
+
+.horizontal-menu li.hamburger-menu {
+  float: right;
+  display: block;
+}
+
+.navigation {
+	color: white;
+	background-color: black;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	font-size: 0.8em;
+	z-index: 1;
+}
+
+.navigation a {
+	color: white;
+}
+
+.horizontal-menu, #my-menu {
+	position: fixed;
+	text-align: center;
+	background-color: #f2f2f2;
+	height: 3.6rem;
+	top: 2.9rem;
+	width: 100%;
+	z-index: 1;
+}
+
+#my-menu li {
+	list-style: none;
+	background-color: #f2f2f2;
+	padding: 1rem;
+}
+
+.bar1, .bar2, .bar3 {
+	transition: 0.3s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 2px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -2px);
+}
+
+#my-menu li:hover {
+	background-color: #a89b9a;
+	color: white;
+}
+
+#my-menu a {
+	text-decoration: none;
+	color: black;
+}
+
+#my-menu ul {
+	padding-left: 0;
+	padding: 0;
+}
+
+.horizontal-menu li {
+	display: inline-block;
+	padding: 0.85rem;
+	display: inherit;
+}
+
+.horizontal-menu a, .horizontal-menu a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#deadspace {
+	padding-top: 6rem;
+}
+
+.hamburger-menu div {
+	width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 45%;
+    margin-top: 1.5%; margin-left: 5%; margin-right: 5%;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#half p {
+	text-indent: 50px;
+	margin-left: 5%;
+	margin-right: 40px;
+}
+
+ #title, #title2, #title3, #title4 {
+ 	margin-left: 5%;
+	margin-right: 40px;
+}
+
+#gallery-thumbnails ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#gallery-thumbnails li {
+	display: inline;
+}
+
+#gallery-thumbnails a {
+	text-decoration: none;
+}
+
+#gallery-thumbnails img {
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	padding: 5px;
+}
+
+#gallery img.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#caption {
+	background-color: #f2f2f2;
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+#gallery svg {
+	display: none;
+}
+#gallery {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#image a {
+	display: inline-block;
+	pointer-events: none;
+}
+
+#interview {
+	margin-bottom: 20px;
+}
+
+#clause {
+	margin-left: 5%;
+	font-family: 'Faustina', serif;
+}
+
+#quotes {
+	font-family: 'Coustard', serif;
+	font-size: 5em;
+	color: #9b3f3f;
+}
+
+#quotes2 {
+	font-family: 'Coustard', serif;
+	font-size: 5em;
+	color: #9b3f3f;
+	text-align: right;
+}
+
+#quote1 {
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+#quote-caption {
+	font-size: 0.7em;
+	text-align: right;
+	font-family: 'Lato', sans-serif;
+}
+
+#facts {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#image img {
+	max-width: 100%;
+}
+
+#bio-image img, #quiz-image img {
+	max-width: 100%;
+}
+
+#bio-image-caption {
+	background-color: black;
+	color: white;
+	padding-left: 5%;
+	position: block;
+	margin-top: -0.55rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	font-size: 0.79;
+}
+
+#quiz-image-caption {
+	background-color: black;
+	color: white;
+	padding-left: 5%;
+	position: block;
+	margin-top: -0.57rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	font-size: 0.79em;
+}
+
+#bio-title {
+	position: absolute;
+	color: white;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 3em;
+	margin-left: 5%;
+	margin-top: 35%;
+}
+
+#quiz {
+	margin-left: 5%;
+}
+
+#quiz li {
+	margin-left: 0;
+}
+
+#contact a {
+	color: #9b3f3f;
+}
+
+#contact a:hover {
+	color: #a89b9a;
+}
+
+#result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #result10, #result11, #result11, #result12 {
+	color:red;
+	display: inline-block;
+	
+}
+
+.option {
+	padding: 10px;
+	border-style: outset;
+	width: auto;
+	display: inline-block;
+	cursor: pointer;
+}
+.option:active {
+	border-style: inset;
+}
+.options li {
+	display: inline-block;
+	margin: 0 5px;
+}
+#quiz ul {
+	padding: 0;
+	margin: 0;
+}
+
+#quiz-buttons {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+}
+
+#show-total, #reset-quiz {
+	cursor: pointer;
+	display: inline-block;
+	border: solid;
+	padding: 20px;
+	margin: 5px;
+	width: 10rem;
+	text-align: center;
+}
+#show-total:hover , #reset-quiz:hover {
+	color: white;
+	background-color: black;
+}
+#final-result {
+	margin: 10px;
+}
+#quiz-intro {
+	margin-bottom: 20px;
+	background-color: #b7b0b0;
+	margin-top: 0;
+	padding-left: 5%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#quiz-intro a,#final-result a {
+	color: #6d2b2b;
+}
+
+#quiz-intro a:hover,#final-result a:hover {
+	color: #9b3f3f;
+}
+
+#quiz-note {
+	font-size: 0.8em;
+}
+
+#quiz-top {
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.question {
+	margin-bottom: 4rem;
+}
+
+/* 51rem and above for desktop */
+@media all and (min-width: 51rem) {
+	body {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 16.3rem;
+	}
+	footer {
+		text-align: initial;
+		position: absolute;
+		height: 16.3rem;
+	}
+
+	.navigation {
+		font-size: 0.9em
+		padding: 0;
+		margin: 0;
+	}
+	.links {
+		position: relative;
+		float: right;
+		top: 10px;
+		margin-right: 1.5rem;
+		width: 7.5rem;
+	}
+	.footer-description {
+		position: relative;
+		float: left;
+		top: 6.65rem;
+		left: 5%;
+		padding: 0;
+		width: 20%;
+	}
+	.horizontal-menu li {
+		display: inline-block;
+		background-color: #dbcbcb;
+		margin: 0 1rem;
+		padding: .935rem;
+	}
+	.horizontal-menu ul {
+		padding: 0;
+		margin: 0;
+	}
+	.horizontal-menu li:not(#current) {
+		display: initial;
+	}	
+	.horizontal-menu, #my-menu {
+		text-align: center;
+		background-color: #f2f2f2;
+		height: 3.6rem;
+		top: 1.75rem;
+		display: inherit;
+	}
+
+	#my-menu ul {
+		padding-left: 0;
+		margin-top: 0;
+	}
+
+	.horizontal-menu a,.horizontal-menu a:visited {
+		color: white;
+		text-decoration: none;
+	}
+	.navigation {
+		background-color: black;
+		color: white;
+		padding-left: 5%;
+		padding-top: 0.3rem;
+		padding-bottom: 0.3rem;
+		top: 0;
+	}
+	.ontop {
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+	}
+	#deadspace {
+		padding-top: 5rem;
+	}
+
+	#current, #my-menu #current {
+		background-color: #9b3f3f;
+		color: white;
+	}
+
+	.hamburger-menu {
+		display: none;
+	}
+
+	#half {
+		float: left;
+		width: 55%;
+	}
+
+	#half p {
+		text-indent: 20px;
+		margin-left: 10%;
+		margin-right: 20px;
+	}
+
+	#title {
+ 		margin-left: 10%;
+		margin-right: 20px;
+ 	}
+
+ 	#title2 {
+ 		margin-left: 5%;
+ 	}
+
+	#title3 {
+	 	margin-left: 10%;
+		margin-right: 20px;
+		margin-top: 50px;
+		margin-bottom: 2.5rem;
+	 }
+
+	 #title4 {
+
+	 }
+
+	#gallery {
+		float: left;
+		width: 45%;
+		text-align: center;
+	}
+
+	#image a {
+		display: inline-block;
+		pointer-events: initial;
+		cursor: pointer;
+	}
+
+	#gallery img.center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#caption {
+		background-color: #f2f2f2;
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
+		display:inline-block;
+	}
+
+	#gallery-thumbnails ul {
+		text-align: center;
+	}
+
+	#gallery-thumbnails li {
+		display: inline;
+	}
+	#gallery-thumbnails img {
+		padding: 20px;
+		cursor: pointer;
+	}
+	#gallery-thumbnails img:hover {
+		background-color: #9b3f3f;
+	}
+	#gallery svg {
+		display: block;
+		visibility: hidden;
+		margin-top: -4.15rem;
+		fill:#FFFFFF;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;
+		stroke:#000000;stroke-miterlimit:10;
+		opacity: 0.75;
+	}
+	#image a:hover svg {
+		visibility: visible;
+	}
+	#interview {
+		margin-left: 5%;
+		margin-bottom: 50px;
+	}
+	#quotes {
+		font-family: 'Coustard', serif;
+		font-size: 6.5em;
+		color: #9b3f3f;
+	}
+
+	#quotes2 {
+		font-family: 'Coustard', serif;
+		font-size: 6.5em;
+		color: #9b3f3f;
+		text-align: right;
+	}
+
+	#quote1 {
+		font-size: 1.5em;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+	}
+
+	#quote-caption {
+		font-size: 0.8em;
+		text-align: right;
+		font-family: 'Lato', sans-serif;
+	}
+
+	#facts {
+		margin-left: 5%;
+	}
+	#bio-image img, #quiz-image img {
+		max-width: 100%;
+	}
+
+	#bio-image-caption {
+		font-size: 0.8em;
+	}
+
+	#bio-title {
+		position: absolute;
+		color: white;
+		font-family: 'Catamaran', sans-serif;
+		font-size: 4em;
+		margin-left: 5%;
+		margin-top: 35%;
+	}
+
+	#gallery-thumbnails img {
+		width: initial;
+		height: initial;
+	}
+	.option {
+		padding: 10px;
+		border-style: outset;
+		width: auto;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.option:active {
+		border-style: inset;
+	}
+
+	.options li {
+		display: inline;
+		margin: 0 10px;
+	}
+
+	#quiz-buttons {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10rem;
+	}
+
+	#show-total, #reset-quiz {
+		cursor: pointer;
+		display: inline-block;
+		border: solid;
+		padding: 20px;
+		margin: 5px;
+		width: 15rem;
+		text-align: center;
+	}
+
+	#show-total:hover , #reset-quiz:hover {
+		color: white;
+		background-color: black;
+	}
+
+	#final-result {
+		margin: 10px;
+	}
+
+	#quiz-intro {
+		margin-bottom: 20px;
+		margin-top: 0;
+		padding-left: 5%;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	#quiz-note {
+		font-size: 0.8em;
+	}
+	#quiz span {
+		margin-left: 20px;
+	}
+
+	.question {
+		margin-bottom: 7rem;
+	}
+
+	#quiz-image-caption {
+	font-size: 0.8em;
+	}
+}
+
+/* Min-width is 1rem from desktop size so it only changes during desktop mode and max width is the breaking point we want to change */
+@media all and (max-width: 59.188rem) and (min-width: 50rem) {
+	#gallery-thumbnails img {
+		padding: 10px;
+		cursor: pointer;
+	}
+}

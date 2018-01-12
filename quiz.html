@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	<meta name="description" content="A promotional website for a film on Sir Robert Borden" />
+	<meta name="keywords" content="Canada, Prime Minister, Film, Canadian History, Canadian Film, Education" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/mobilemenu.js"></script>
+	<script src="js/burgertox.js"></script>
+	<script src="js/quiz.js"></script>
+	<script src="js/randomize.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Faustina" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body onload="randomifyQuestions(); randomifyq1(); randomifyq2(); randomifyq3(); randomifyq4(); randomifyq5(); randomifyq6(); randomifyq7(); randomifyq8(); randomifyq9(); randomifyq10(); randomifyq11(); randomifyq12()">
+	<div class="ontop">
+	<div class="navigation"><a href ="#">Prime Ministers of Canada</a> > <strong>Sir Robert Borden</strong>
+	</div>
+	<div class="horizontal-menu" id="my-menu">
+		<ul>
+			<a href="index.html"><li>About Sir Robert Borden</li></a>
+			<a href="biography.html"><li>Biography</li></a>
+			<a href="quiz.html"><li id="current">Test your knowledge quiz</li></a>
+			<a href="trailer.html"><li>Watch the trailer</li></a>
+			<a href="javascript:void(0);" onclick="myFunction()">
+				<div class="hamburger-menu" onclick="burgerCross(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</a>
+		</ul>
+	</div>
+	</div>
+
+<div id="deadspace"></div> <!-- Separates the fixed nav bar with the content below -->
+<div id="bio-image">
+	<img src="img/quiz-statue.JPG" alt="Sir Robert Borden holding a young baby boy.">
+	<div id="quiz-image-caption">
+		Statue of Robert Borden, Parliament Hill, Ottawa
+	</div>
+</div>
+
+	<p id="quiz-intro">Test your knowledge of Sir Robert Borden and his involvement as a politician and as a person in this 12 question quiz.
+	<br>
+	To help answer the questions below, you may read the <a href="biography.html">Biography</a> page.
+	<br>
+	If you leave this quiz page your progress on the quiz will be reset; so make sure to study before you do the quiz! Good luck!
+	<br>
+	<br>
+	<span id="quiz-note">Note: All answers are final. You can reset the quiz by pressing the reset button at the <a href="#reset-quiz">bottom</a> of the page or by refreshing, all questions their answers' order are scrambled.
+	</span>
+	</p>
+
+<div id="content">
+	<div id="title4">Quiz</div>
+	<div id="quiz">
+	<div id="randomize-questions">
+	<div class="question">
+		<p>When was Sir Robert Borden born? <span id="result1"></span></p>
+		<ul class="options" id="options1">
+			<li><p class="option" id="1" onclick="q1(this)">June 26, 1854</p></li>
+			<li><p class="option" id="2" onclick="q1(this)">June 22, 1854</p></li>
+			<li><p class="option" id="3" onclick="q1(this)">November 26, 1861</p></li>
+			<li><p class="option" id="4" onclick="q1(this)">July 2, 1821</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>What is Sir Robert Borden's mothers name? <span id="result2"></span></p>
+		<ul class="options" id="options2">
+			<li><p class="option" id="5" onclick="q2(this)">Frances Amélia</p></li>
+			<li><p class="option" id="6" onclick="q2(this)">Laura Bond Borden</p></li>
+			<li><p class="option" id="7" onclick="q2(this)">Eunice Jane Laird</p></li>
+			<li><p class="option" id="8" onclick="q2(this)">Miriam Lockhart</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>What is Sir Robert Borden's fathers name? <span id="result3"></span></p>
+		<ul class="options" id="options3">
+			<li><p class="option" id="9" onclick="q3(this)">Arthur Borden</p></li>
+			<li><p class="option" id="10" onclick="q3(this)">Charles Borden</p></li>
+			<li><p class="option" id="11" onclick="q3(this)">Andrew Borden</p></li>
+			<li><p class="option" id="12" onclick="q3(this)">Alexander Borden</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>Who had the strongest influence on Sir Robert Borden's work ethic? <span id="result4"></span></p>
+		<ul class="options" id="options4">
+			<li><p class="option" id="13" onclick="q4(this)">Sir Robert Borden's wife</p></li>
+			<li><p class="option" id="14" onclick="q4(this)">Sir Charles Tupper</p></li>
+			<li><p class="option" id="15" onclick="q4(this)">Sir Robert Borden's father</p></li>
+			<li><p class="option" id="16" onclick="q4(this)">Eunice Jane Laird</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>What were Sir Robert Borden's previous occupations prior to becoming Prime Minister of Canada? <span id="result5"></span></p>
+		<ul class="options" id="options5">
+			<li><p class="option" id="17" onclick="q5(this)">Teacher, Law Firm Lawyer, County Court Judge, Conservative Party Partner</p></li>
+			<li><p class="option" id="18" onclick="q5(this)">Real Estate Agent, Accountant, Librarian, Liberal Party Partner</p></li>
+			<li><p class="option" id="19" onclick="q5(this)">Financial Bookkeeper, Wheat Farmer, County Court Judge, Accountant</p></li>
+			<li><p class="option" id="20" onclick="q5(this)">Teacher, Liberal Party Partner, Librarian, Conservative Party Partner</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>What was Sir Robert Borden's wifes name? <span id="result6"></span></p>
+		<ul class="options" id="options6">
+			<li><p class="option" id="21" onclick="q6(this)">Frances Amélia</p></li>
+			<li><p class="option" id="22" onclick="q6(this)">Laura Borden</p></li>
+			<li><p class="option" id="23" onclick="q6(this)">Eunice Jane Laird</p></li>
+			<li><p class="option" id="24" onclick="q6(this)">Laila Borden Bond</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>How many children did Sir Robert Borden have? <span id="result7"></span></p>
+		<ul class="options" id="options7">
+			<li><p class="option" id="25" onclick="q7(this)">2</p></li>
+			<li><p class="option" id="26" onclick="q7(this)">1</p></li>
+			<li><p class="option" id="27" onclick="q7(this)">0</p></li>
+			<li><p class="option" id="28" onclick="q7(this)">5</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>When did Sir Robert Borden become Prime Minister of Canada? <span id="result8"></span></p>
+		<ul class="options" id="options8">
+			<li><p class="option" id="29" onclick="q8(this)">October 10th, 1911 at 57 years old</p></li>
+			<li><p class="option" id="30" onclick="q8(this)">July 10th, 1920 at 66 years old</p></li>
+			<li><p class="option" id="31" onclick="q8(this)">October 15th, 1911 at 57 years old</p></li>
+			<li><p class="option" id="32" onclick="q8(this)">July 15th, 1920 at 66 years old</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>Who is Sir Charles Tupper? <span id="result9"></span></p>
+		<ul class="options" id="options9">
+			<li><p class="option" id="33" onclick="q9(this)">Conservative Cabinet Minister, and Canada's 5th Prime Minister</p></li>
+			<li><p class="option" id="34" onclick="q9(this)">Canada's 7th Prime Minister</p></li>
+			<li><p class="option" id="35" onclick="q9(this)">Senior officer of the Canadian Army</p></li>
+			<li><p class="option" id="36" onclick="q9(this)">Conservative Cabinet Minister, and Canada's 6th Prime Minister</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>Sir Robert Borden was once Prime Minister of Canada. What number Prime Minister was he? <span id="result10"></span></p>
+		<ul class="options" id="options10">
+			<li><p class="option" id="37" onclick="q10(this)">5th</p></li>
+			<li><p class="option" id="38" onclick="q10(this)">8th</p></li>
+			<li><p class="option" id="39" onclick="q10(this)">2nd</p></li>
+			<li><p class="option" id="40" onclick="q10(this)">9th</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>What year did Sir Charles Tupper ask him to run for an election with the Conservative party? <span id="result11"></span></p>
+		<ul class="options" id="options11">
+			<li><p class="option" id="41" onclick="q11(this)">1896</p></li>
+			<li><p class="option" id="42" onclick="q11(this)">1893</p></li>
+			<li><p class="option" id="43" onclick="q11(this)">1899</p></li>
+			<li><p class="option" id="44" onclick="q11(this)">1900</p></li>
+		</ul>
+	</div>
+	<div class="question">
+		<p>From <i>Robert Laird Borden: His Memoirs, Volume 1</i>, which quote(s) refer to Sir Robert Borden's mother? <span id="result12"></span></p>
+		<ul class="options" id="options12">
+			<li><p class="option" id="45" onclick="q12(this)">• "had received fair education."<br> • "very strong character, [with] remarkable energy, high ambition, and unusual ability."</p></li>
+			<li><p class="option" id="46" onclick="q12(this)">• “no political ambition [and was] wholly devoted to profession.”<br> • "had received fair education."</p></li>
+			<li><p class="option" id="47" onclick="q12(this)">• “highly educated and cultured.”<br> • "very strong character, [with] remarkable energy, high ambition, and unusual ability."</p></li>
+			<li><p class="option" id="48" onclick="q12(this)">• "had received fair education."<br> • “devotion and helpfulness has been the chief support of [his] life’s labours.”</p></li>
+		</ul>
+	</div>
+	</div>
+		
+
+	</div>
+	<div id="quiz-buttons">
+		<div id="show-total" onclick="correct()">Submit answers</div>
+		<div id="final-result"></div>
+		<div id="reset-quiz" onclick="reset()">Reset & try again</div>
+	</div>
+</div>
+<footer>
+	<ul class="links">
+		<li><h4>Share</h4></li>
+		<li><a href="https://www.youtube.com/channel/UC6el099eLurDHD82srRAWcQ">YouTube</a></li>
+		<li><a href="https://www.facebook.com/sirrobert1911?ref=hl">Facebook</a></li>
+	</ul>
+	<ul class="links">
+		<li><h4>Prime Ministers of Canada</h4></li>
+		<li><a href="#">About the film series</a></li>
+		<li><a href="#">Other Prime Ministers</a></li>
+	</ul>
+	<ul class="links">
+		<li><h4>Educational</h4></li>
+		<li><a href="quiz.html">Test your knowledge quiz</a></li>
+		<li><a href="trailer.html">Watch the trailer</a></li>
+	</ul>
+	<ul class="links">
+		<li><h4>Introduction</h4></li>
+		<li><a href="index.html">About Sir Robert Borden</a></li>
+		<li><a href="biography.html">Biography</a></li>
+	</ul>
+	<div class="footer-description">
+		Copyright © 2017 Louis delos Reyes
+	</div>
+</footer>
+</body>
+
+</html>
