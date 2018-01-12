@@ -1,6 +1,6 @@
 # robert-borden
 
-This is a edit of a repository of a 4-person group project I did in University of Toronto's Joint Program with Centennial College.
+This is an edit of a repository of a 4-person group project I did in University of Toronto's Joint Program with Centennial College.
 
 - My Responsibilities: Coding (CSS, HTML) & Designing (Wireframes, UI Mockups)
 - Team Responsibilities: Scheduling, Designing, Presentation
