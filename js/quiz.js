@@ -378,18 +378,18 @@ function correct() {
 	}
 	if(isNaN(sessionStorage.totalcorrect1) || isNaN(sessionStorage.totalcorrect2) || isNaN(sessionStorage.totalcorrect3) || isNaN(sessionStorage.totalcorrect4) || isNaN(sessionStorage.totalcorrect5) || isNaN(sessionStorage.totalcorrect6) || isNaN(sessionStorage.totalcorrect7) || isNaN(sessionStorage.totalcorrect8) || isNaN(sessionStorage.totalcorrect9) || isNaN(sessionStorage.totalcorrect10) || isNaN(sessionStorage.totalcorrect11) || isNaN(sessionStorage.totalcorrect12)) {
 		document.getElementById("final-result").innerHTML = ('Please answer all the questions before checking your final score.');
-	} else if(total < 6) {
-		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Oh no, looks like you need to study more! Visit the <a href="biography.html">Biography</a> page to help you answer the questions!');
-	} if(8 > total > 5) {
-		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Keep trying! Visit the <a href="biography.html">Biography</a> page to help you answer the questions!');
-	} if(11 > total > 8) {
+	} else if(total <= 4) {
+		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Oh no, looks like you need to study more! Visit the <a href="biography.html">Biography</a> page to help you answer the questions! Remember to also watch the interview <a href="index.html#interview">video</a> with the grand nephew of Sir Robert Borden.');
+	} if( total >= 7 && total >= 5) {
+		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Keep trying! Visit the <a href="biography.html">Biography</a> page to help you answer the questions!  Remember to also watch the interview <a href="index.html#interview">video</a> with the grand nephew of Sir Robert Borden.');
+	} if(total >= 10 && total >= 8) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%! ') + ('<br>Very good, you`re almost there!');
 	} if(total == 11) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%! ') + ('<br>Impressive!');
 	} if(total == 12) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%! ') + ('<br>Perfect score, congratulations!');
 		document.getElementById("final-result").innerHTML = ("green");
-	} if(document.getElementById("final-result").innerHTML != 'Please answer all the questions before checking your final score.') {
+	} if(document.getElementById("final-result").innerHTML != ('Please answer all the questions before checking your final score.')) {
 		document.getElementById("show-total").style.backgroundColor = "black";
 		document.getElementById("show-total").style.color = "white";
 	}
