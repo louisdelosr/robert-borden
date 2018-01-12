@@ -380,9 +380,9 @@ function correct() {
 		document.getElementById("final-result").innerHTML = ('Please answer all the questions before checking your final score.');
 	} else if(total <= 4) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Oh no, looks like you need to study more! Visit the <a href="biography.html">Biography</a> page to help you answer the questions! Remember to also watch the interview video with the grand nephew of Sir Robert Borden on the <a href="index.html">About Sir Robert Borden</a> page.');
-	} if( total >= 7 && total >= 5) {
+	} if((total) >= 7 && (total >= 5)) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%... ') + ('<br>Keep trying! Visit the <a href="biography.html">Biography</a> page to help you answer the questions! Remember to also watch the interview video with the grand nephew of Sir Robert Borden on the <a href="index.html">About Sir Robert Borden</a> page.');
-	} if(total >= 10 && total >= 8) {
+	} if((total >= 10) && (total >= 8)) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%! ') + ('<br>Very good, you`re almost there!');
 	} if(total == 11) {
 		document.getElementById("final-result").innerHTML = ('Your score is ') + total + (' out of 12 | ') + Math.floor(total/12*100) + ('%! ') + ('<br>Impressive!');
