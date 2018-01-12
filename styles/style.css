@@ -8,7 +8,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	padding-bottom: 37.2rem;
+	padding-bottom: 37.5rem;
 	font-family: 'Hind', sans-serif;
 
 }
@@ -21,7 +21,7 @@ footer {
    position:absolute;
    bottom:0;
    width:100%;
-   height: 37.2rem;
+   height: 37.5rem;
    background-color: black;
    text-align: center;
    color: #9b3f3f;
@@ -62,7 +62,7 @@ footer a:hover {
 	font-size: 1.2em;
 }
 
-#content {
+.content {
 	font-family: 'Faustina', serif;
 	margin: 0;
 	padding: 0;
@@ -77,13 +77,13 @@ footer a:hover {
 	top: 17px;
 }
 
-.hamburger-menu div:hover {
+/*.hamburger-menu div:hover {
 	background-color: white;
 }
 
 .hamburger-menu:hover div {
 	background-color: white;
-}
+}*/
 
 .horizontal-menu li:not(#current) {
 	display: none;
@@ -135,16 +135,17 @@ footer a:hover {
 	position: fixed;
 	text-align: center;
 	background-color: #f2f2f2;
-	height: 3.6rem;
+	height: 3.7rem;
 	top: 2.9rem;
 	width: 100%;
 	z-index: 1;
+	
 }
 
 #my-menu li {
 	list-style: none;
 	background-color: #f2f2f2;
-	padding: 1rem;
+	padding: 0.98rem;
 }
 
 .bar1, .bar2, .bar3 {
@@ -208,11 +209,13 @@ footer a:hover {
  
 .video-container iframe,
 .video-container object,
+.video-container video,
 .video-container embed {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 0;
+    cursor: pointer;
 }
 
 #half p {
@@ -310,6 +313,10 @@ footer a:hover {
 #facts {
 	margin-left: 5%;
 	margin-right: 5%;
+}
+
+#facts ul {
+	padding-left: 10px;
 }
 
 #image img {
@@ -739,5 +746,54 @@ footer a:hover {
 	#gallery-thumbnails img {
 		padding: 10px;
 		cursor: pointer;
+	}
+}
+
+@media all and (max-width: 270px) {
+	.horizontal-menu, #my-menu {
+		/*position: fixed;
+		text-align: center;*/
+		background-color: #f2f2f2;
+		/*height: 3.6rem;
+		top: 2.9rem;
+		width: 100%;
+		z-index: 1;
+		display: block;*/
+	}
+
+	#my-menu li {
+		/*list-style: none;*/
+		font-size: 0.7em;
+		/*padding: 0;*/
+		padding: 0;
+		height: 35px;
+		padding-top: 21px;
+	}
+	.navigation {
+		font-size: 0.6em;
+		z-index: 2;
+	}
+	#bio-title {
+		font-size: 2em;
+	}
+
+	.hamburger-menu {
+		position: static;
+		background-color: #f2f2f2;
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		right: 12px;
+		top: 17px;
+	}
+
+	#my-menu li:hover {
+		background-color: #f2f2f2;
+		color: black;
+	}
+
+	#my-menu li:active {
+		background-color: #a89b9a;
+		color: white;
 	}
 }
