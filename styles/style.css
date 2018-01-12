@@ -420,6 +420,8 @@ footer a:hover {
 }
 #final-result {
 	margin: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 #quiz-intro {
 	margin-bottom: 20px;
